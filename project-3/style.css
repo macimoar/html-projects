@@ -116,4 +116,25 @@ nav a {
     .hide-mobile {
         display: none;
     }
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin-left: 0;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    .header-container {
+        position: relative;
+    }
+    .container {
+        padding-top: 0px;
+    }
 }
