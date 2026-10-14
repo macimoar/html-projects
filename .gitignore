@@ -1,3 +1,6 @@
 __MACOSX/
 Exercise Files - Web Essentials/
 project-2/mail.php
+node_modules/
+package-lock.json
+package.json
