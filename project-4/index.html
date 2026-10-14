@@ -21,55 +21,63 @@
 <body>
     <div class="container">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo-dans-meat-yogurt.svg" alt="Dan's Meat Yogurt Company Logo">
+                </a>
+            </nav>
+
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+
+
+
+            <!-- BUTTON DROPDOWN -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <ul class="navbar-nav ml-auto float-right">
+
+                    <li class="nav-item dropdown btn btn-outline-light mr-4" style="width: 120px">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            Flavors
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Ham</a>
+                            <a class="dropdown-item" href="#">Beef</a>
+                            <a class="dropdown-item" href="#">Chicken</a>
+                            <a class="dropdown-item" href="#">Fish</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+
+
+
+
+                    <!-- BUTTON NORMAL -->
+                    <li class="nav-item btn btn-outline-light" style="width: 120px">
+                        <a class="nav-link text-white" href="#">Contact</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+
             </div>
         </nav>
 
 
         <!-- Carousel -->
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide d-none d-md-block carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-interval="500">
                     <img src="images/yogurt-1.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="500">
                     <img src="images/yogurt-2.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="500">
                     <img src="images/yogurt-3.png" class="d-block w-100" alt="...">
                 </div>
             </div>
@@ -86,41 +94,65 @@
 
         <!-- Jumbotron -->
         <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <div class="row">
+                <div class="col-12 col-md-7 text-center text-md-left">
+                    <h1 class="display-3 text-white drop-shadow">Thick and Creamy</h1>
+                    <p class="lead">With real meat chunks</p>
+                    <a class="btn btn-outline-light btn-lg mt-4 px-5 py-3 mb-5 mb-md-0" href="#"
+                        role="button">Pricing</a>
+                </div>
+                <div class="col-12 col-md-5">
+                    <img src="images/hero1.png" class="img-fluid" alt="Dan's Meat Yogurts">
+                </div>
+            </div>
         </div>
 
+        <!-- FOUNDERS MESSAGE -->
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <img src="images/headshot-dan.jpg" class="img-fluid border rounded-left border-lg border-0"
+                    alt="Daniel Walter Scott - Meat Yogurt Founder">
+            </div>
+            <div class="col-12 col-md-8 bg-white p-5 align-items-center border border-dark rounded-right border-lg">
+                <section>
+                    <h2>Message from our founder</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium asperiores necessitatibus,
+                        commodi, quo dolores laboriosam, modi placeat saepe porro officia pariatur libero dignissimos.
+                        Ducimus iusto in hic praesentium animi cumque! Quidem dolorem fugit blanditiis, in mollitia
+                        vitae? Sunt id veniam architecto, ratione est fugiat, eius accusantium vero earum nam quibusdam
+                        provident. Facere saepe voluptate dolores a vel culpa officiis ea.</p>
+                </section>
+            </div>
+        </div>
 
         <!-- cards -->
-        <div class="card" style="width: 18rem;">
-            <img src="images/product1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="card-deck my-5">
+            <div class="card shadow" style="width: 18rem;">
+                <img src="images/product1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                </div>
             </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="images/product2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card shadow" style="width: 18rem;">
+                <img src="images/product2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                </div>
             </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="images/product3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card shadow" style="width: 18rem;">
+                <img src="images/product3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                </div>
             </div>
         </div>
 

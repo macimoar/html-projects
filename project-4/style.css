@@ -5,8 +5,35 @@ body {
 
 h1 {
     font-family: 'Abril Fatface', cursive;
+    font-size: 4.3rem;
 }
 
 .container {
     background-image: linear-gradient(to bottom right, #00F490, #00BBC9)
+}
+
+.jumbotron {
+    background-color: rgba(0,0,0,0);
+}
+
+.drop-shadow {
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.153);
+}
+
+.lead {
+    color: white;
+    font-size: 2.2rem;
+}
+
+.btn-outline-light {
+    border-color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255,255,255,0.2)
+}
+
+.btn-primary, .btn-primary:hover {
+    background-color: #00BBC9;
+    border-color: #00BBC9;
 }
